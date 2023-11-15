@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <title>Manfind</title>
+    <style>
+        body {
+            font-family:'Times New Roman', Times, serif;
+            font-size: 20px;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+            
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+        }
+        nav a {
+            color: black;
+            text-decoration: none;
+            margin: 0 20px;
+        }
+        .section {
+            padding: 60px 0;
+            text-align: center;
+        }
+
+        .section h2{
+            text-decoration: underline;
+        }
+        #who-are-we{
+             background-image: linear-gradient(rgba(3, 3, 37, 0.8),rgba(7, 7, 49, 0.8)), url("air.jpg"); 
+            background-repeat: inherit;
+            color:#fff;
+            background-position-x:center;
+            background-size: cover;
+            background-position:0%;
+        }
+
+        #our-purpose{
+             background-image: linear-gradient(rgba(3, 3, 37, 0.8),rgba(7, 7, 49, 0.8)), url("pur.jpg");
+            color:#fff;
+            background-repeat:inherit;
+            background-position-x: center;
+            background-size:cover;
+            background-position: 0%;
+            word-spacing: 3px;
+        }
+
+        #contact-info{
+            background-image: linear-gradient(rgba(3, 3, 37, 0.8),rgba(7, 7, 49, 0.8)), url("con.jpg");
+            color:#fff;
+            
+        }
+
+        #meet-our-team{
+            background:linear-gradient(to right,#3a326a,#211957);  
+            color:#fff;
+        }
+
+        #logo- {
+    width: 200px;
+    height: 50px;
+    background-color: #0077b5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0.9; 
+    position: absolute; 
+    left: 0;
+    top: 280px; 
+}
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            position: relative;
+            height: fit-content;
+            overflow: hidden;
+        }
+
+        .slider {
+            display: flex;
+            transition: transform 1s ease-in-out;
+            width: 300%; 
+            height:fit-content;
+        }
+
+        .slide {
+            flex: 0 0 33.333%; 
+            box-sizing: border-box;
+            overflow: hidden;
+        }
+
+        img {
+            width: 100%;
+            height: auto;
+            transition: transform 1s ease-in-out;
+        }
+
+        .controls {
+            position: absolute;
+            top: 50%;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            transform: translateY(-50%);
+        }
+
+        .prev, .next {
+            cursor: pointer;
+            font-size: 24px;
+            color: #fff;
+            background-color: #333;
+            padding: 10px;
+            border: none;
+            outline: none;
+            transition: background-color 0.3s ease-in-out;
+        }
+
+        .prev:hover, .next:hover {
+            background-color: #555;
+        }
+
+        .user {
+            display: inline-block;
+            width: 200px;
+            text-align: center;
+            white-space: nowrap;
+            margin: 10px;
+            margin-right: 30px;
+            margin-left: 30px;
+        }
+
+        .user a{
+            text-decoration: none;
+            color: grey;
+        }
+
+        .user h3 {
+            margin: 0;
+            color: antiquewhite
+        }
+
+        .user p {
+            margin: 0;
+            color: antiquewhite;
+        }
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 0px;
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="slider">
+            <div class="slide"><img src="po.jpg" alt="Image 1"></div>
+            <div class="slide"><img src="pol.jpg" alt="Image 2"></div>
+            <div class="slide"><img src="p.jpg" alt="Image 3"></div>
+        </div>
+        <div class="controls">
+            <button class="prev" onclick="prevSlide()">❮</button>
+            <button class="next" onclick="nextSlide()">❯</button>
+        </div>
+    </div>
+        <nav>
+            <div class="logo" id="logo-">
+                <h1>Manfind</h1>
+                </div>
+            <a href="#who-are-we">Who Are We</a>
+            <a href="#our-purpose">Our Purpose</a>
+            <a href="#contact-info">Contact Info</a>
+            <a href="#meet-our-team">Meet Our Team</a>
+        </nav>
+    </header>
+
+    <div class="section" id="who-are-we">
+        <h2>Who Are We</h2>
+        <p>MANFIND is a business consultancy firm, but it is not just that. it is a melting pot of ideas, a place where innovation thrives and creativity flourishes</p>
+    </div>
+
+    <div class="section" id="our-purpose">
+        <h2>Our Purpose</h2>
+        <p>MANFIND exists to solve your business problems for you, so that you can focus on doing what you do best.
+            Need a boost in your sales? Want to generate more leads for your business? Need help in determining the optimal pricing range for your product? Want to understand how to scale your startup?
+            </p>
+    </div>
+
+    <div class="section" id="contact-info">
+        <h2>Contact Info</h2>
+        <p>Contact us at: </p>
+        <p>Tel:120-098-785</p>
+    </div>
+
+    <div class="section" id="meet-our-team">
+        <h2>Meet Our Team</h2>
+
+    <div class="user">
+        <i class="fa-solid fa-user"></i>
+        <h3>Aman Kumar Padhya</h3>
+        <a href="#">amanmanfind@gmail.com</a>
+    </div>
+
+    <div class="user">
+        <i class="fa-solid fa-user"></i>
+        <h3>Sachetan Debray</h3>
+        <a href="#">sachetanmanfind@gmail.com</a>
+    </div>
+
+    <div class="user">
+        <i class="fa-solid fa-user"></i>
+        <h3>Mrudula wani</h3>
+        <a href="#" >mrudulamanfind@gmail.com</a>
+    </div>
+
+    <div class="user">
+        <i class="fa-solid fa-user"></i>
+        <h3>Manas Panchwagh</h3>
+        <a href="#">jaymanfind@gmail.com</a>
+    </div>
+
+    <div class="user">
+        <i class="fa-solid fa-user"></i>
+        <h3>Harsh Chourasia</h3>
+        <a href="#">harshmanfind@gmail.com</a>
+    </div>
+
+    <div class="user">
+        <i class="fa-solid fa-user"></i>
+        <h3>Jay jadhav</h3>
+        <a href="#">harshmanfind@gmail.com</a>
+    </div>
+    </div>
+    <script>
+        let currentSlide = 0;
+
+        function showSlide(index) {
+            const slider = document.querySelector('.slider');
+            const slides = document.querySelectorAll('.slide');
+            if (index >= slides.length) {
+                currentSlide = 0;
+            } else if (index < 0) {
+                currentSlide = slides.length - 1;
+            } else {
+                currentSlide = index;
+            }
+            const translateValue = -currentSlide * 33.333 + '%';
+            slider.style.transform = 'translateX(' + translateValue + ')';
+        }
+
+        function nextSlide() {
+            showSlide(currentSlide + 1);
+        }
+
+        function prevSlide() {
+            showSlide(currentSlide - 1);
+        }
+        setInterval(nextSlide, 3000);
+    </script>
+</body>
+</html>
